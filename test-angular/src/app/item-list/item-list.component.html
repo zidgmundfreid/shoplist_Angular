@@ -1,0 +1,10 @@
+<ul>
+  <li  *ngFor="let item of itemsService.items; let i = index;">
+    <span [class.checked]="item.checked">
+      <input type="checkbox" [checked]="item.checked" (change)="onChange(item.id)">
+      {{  item.name }}
+      {{  i }}
+    </span>
+  </li >
+</ul>
+<button (click)="toggleClass()" >Reset</button>

@@ -1,0 +1,15 @@
+li {
+    list-style: none;
+    padding-top: 3rem;
+    color: black;
+}
+
+ul {
+    width: 300px;
+    margin: 0 auto;
+    padding-left: 10rem;
+  }
+
+.checked {
+    text-decoration: line-through;
+}

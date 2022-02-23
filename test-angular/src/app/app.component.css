@@ -1,6 +1,15 @@
-h1 {
+
+
+
+.container {
     padding-top: 10rem;
-    margin: 0 auto;
-    text-align: center;
+
+
+  width: 800px;
     color: blue;
   }
+
+  .container h1 {
+      text-align: center;
+  }
+
