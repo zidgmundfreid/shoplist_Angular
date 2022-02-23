@@ -4,7 +4,7 @@ li {
 
     color: rgb(133, 133, 133);
     font-weight: bold;
-    font-size: 25px;
+    font-size: 22px;
     margin-left: 25%;
 }
 
@@ -14,13 +14,13 @@ li:hover {
 }
 
 ul {
-    width: 300px;
+    width: 297px;
     margin: 0 auto;
    
     padding: 0px;
     border: 1px solid black;
     padding-bottom: 3rem;
- 
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
 
   }
 
@@ -32,12 +32,22 @@ ul {
 
 button {
     width: 150px;
+    background-color: white;
+    color: blue;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+button:hover {
+    transform: scale(1.1);
+    
 }
 
 .buttons {
     width: 300px;
     margin: 0 auto;
     text-align: center;
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
 }
 
 label {

@@ -9,7 +9,7 @@ import { ItemsService } from '../shared/items.service';
 
 export class ItemListComponent implements OnInit {
 
-
+  visibility: boolean = false;
   constructor(public itemsService: ItemsService) { }
 
   ngOnInit(): void {
@@ -20,7 +20,19 @@ export class ItemListComponent implements OnInit {
     
   }
 
-  toggleClass() {
+  applyAll() {
+
+    this.itemsService.items.forEach(function(e){
+      e.checked = true
+    })
+  
+ 
+  }
+
+  resetAll() {
+    this.itemsService.items.forEach(function(e){
+      e.checked = false
+    })
  
   }
 

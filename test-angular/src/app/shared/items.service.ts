@@ -10,6 +10,8 @@ export interface item {
 @Injectable({ providedIn: 'root' })
 export class ItemsService {
 
+  
+
     public items: item[] = [
         { id: 0,name: 'Сыр', checked: false },
         { id: 1, name: 'Колбаса', checked: false },

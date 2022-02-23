@@ -1,16 +1,15 @@
 .container {
   padding-top: 10rem;
  
-
   width: 100%;
   color: blue;
 }
 
 .container h1 {
   text-align: center;
-  width: 300px;
+  width: 297px;
   margin: 0 auto;
   border: 1px solid black;
   background-color: #d3c3c3;
-  
+  box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
 }
