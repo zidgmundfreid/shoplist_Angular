@@ -1,10 +1,14 @@
 <ul>
-  <li  *ngFor="let item of itemsService.items; let i = index;">
+  <li *ngFor="let item of itemsService.items; let i = index;">
     <span [class.checked]="item.checked">
-      <input type="checkbox" [checked]="item.checked" (change)="onChange(item.id)">
-      {{  item.name }}
-      {{  i }}
+      <label>
+        <input type="checkbox"  class="input-checkbox" [checked]="item.checked" (change)="onChange(item.id)"> 
+        <div>{{  item.name }}</div>
+      </label>
     </span>
-  </li >
+  </li>
 </ul>
-<button (click)="toggleClass()" >Reset</button>
+<div class="buttons">
+  <button (click)="toggleClass()">Reset</button>
+  <button>Apply</button>
+</div>

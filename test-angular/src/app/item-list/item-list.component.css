@@ -1,15 +1,54 @@
 li {
     list-style: none;
     padding-top: 3rem;
-    color: black;
+
+    color: rgb(133, 133, 133);
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 25%;
+}
+
+li:hover {
+    color:rgb(59, 59, 59);
+    transition: ease-in-out 0.3ms;
 }
 
 ul {
     width: 300px;
     margin: 0 auto;
-    padding-left: 10rem;
+   
+    padding: 0px;
+    border: 1px solid black;
+    padding-bottom: 3rem;
+ 
+
   }
+
+
 
 .checked {
     text-decoration: line-through;
+}
+
+button {
+    width: 150px;
+}
+
+.buttons {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+label {
+    display: flex;
+}
+
+label div {
+    padding-left: 20px;
+}
+
+.input-checkbox {
+    transform:scale(4.0);
+    
 }
