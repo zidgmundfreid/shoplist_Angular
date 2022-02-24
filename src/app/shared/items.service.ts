@@ -1,4 +1,4 @@
-import { Injectable } from "@angular/core";
+import { Injectable, Input } from "@angular/core";
 
 
 export interface item {
@@ -10,10 +10,10 @@ export interface item {
 @Injectable({ providedIn: 'root' })
 export class ItemsService {
 
-  
+    elements: item[] = []
 
     public items: item[] = [
-        { id: 0,name: 'Сыр', checked: false },
+        { id: 0, name: 'Сыр', checked: false },
         { id: 1, name: 'Колбаса', checked: false },
         { id: 2, name: 'Молоко', checked: false },
         { id: 3, name: 'Хлеб', checked: false },
@@ -31,7 +31,5 @@ export class ItemsService {
         } else {
             this.items.splice(0, 0, this.items.splice(idx, 1)[0]);
         }
-
     }
-
 }

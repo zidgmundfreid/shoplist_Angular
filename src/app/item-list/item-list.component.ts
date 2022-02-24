@@ -9,31 +9,21 @@ import { ItemsService } from '../shared/items.service';
 
 export class ItemListComponent implements OnInit {
 
-  visibility: boolean = false;
+
   constructor(public itemsService: ItemsService) { }
 
   ngOnInit(): void {
   }
 
   onChange(id: number) {
-    this.itemsService.onToggle(id)
-    
+    this.itemsService.onToggle(id)    
   }
 
   applyAll() {
-
-    this.itemsService.items.forEach(function(e){
-      e.checked = true
-    })
-  
- 
+    this.itemsService.items.forEach(e => e.checked = true) 
   }
 
   resetAll() {
-    this.itemsService.items.forEach(function(e){
-      e.checked = false
-    })
- 
+    this.itemsService.items.forEach(e => e.checked = false)  
   }
-
 }
